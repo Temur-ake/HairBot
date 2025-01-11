@@ -1,4 +1,4 @@
-name: Hair Bot CI/CD Deployment
+name: Hair Bot  Deployment
 
 on:
   push:
