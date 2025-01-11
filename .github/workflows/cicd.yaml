@@ -1,4 +1,4 @@
-name: Taksi Bot CI/CD Deployment
+name: Hair Bot CI/CD Deployment
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /var/www/temur_taxi
+            cd /var/www/temur_hair
             git pull 
-            systemctl restart temur_taxi.service
-            systemctl restart temur_taxi_a.service
+            systemctl restart temur_hair.service
+            systemctl restart temur_hair_a.service

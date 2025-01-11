@@ -6,13 +6,12 @@ import aiogram
 from aiogram import Router, F
 from aiogram.fsm.context import FSMContext
 from aiogram.types import KeyboardButton, Message
-from aiogram.utils.i18n import gettext as _
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 from dotenv import load_dotenv
 
 from handlers.inform import get_available_times
 from keyboards import main_menu_button
-from models import session, User, Barber, Salon, Service, BarberService
+from models import session, User, Barber, Salon, Service
 from state import AdminState
 
 

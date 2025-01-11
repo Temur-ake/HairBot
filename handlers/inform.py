@@ -1,13 +1,8 @@
-import os
-from datetime import datetime, timedelta
-
-from aiogram import Bot, Router, html, F
-from aiogram.filters import CommandStart
+from aiogram import Bot, Router, F
 from aiogram.fsm.context import FSMContext
 from aiogram.types import KeyboardButton, Message, ReplyKeyboardRemove, CallbackQuery, InlineKeyboardMarkup, \
     InlineKeyboardButton
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
-from sqlalchemy import func
 
 from keyboards import main_menu_button, salon_list_button, service_list_button
 from models import User, session, Appointment, Barber, Salon, BarberAvailability, BarberService, Service
